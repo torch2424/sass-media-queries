@@ -20,7 +20,7 @@ npm install --save sass-media-queries
 Simply import at the top of a sass file to get going:
 
 ```scss
-@import 'node_modules/sass-media-queries/index.scss';
+@import './node_modules/sass-media-queries/index.scss';
 
 // Other Sass down here...
 ```
