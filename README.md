@@ -66,6 +66,7 @@ In HTML on an element:
 
 ```html
 <div class="smq__all-mobile">
+  🖥️ You won't see me on desktop! 🖥️
 </div>
 ```
 
