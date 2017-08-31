@@ -35,7 +35,7 @@ $large-desktop-width: 1440px;
 
 // All Mobile Devices including tablets
 @mixin smq__all-mobile {
-    @media (max-width: #{$tablet-width}) {
+    @media (max-width: #{$desktop-width}) {
       @content;
     }
 }
@@ -56,7 +56,7 @@ $large-desktop-width: 1440px;
 
 // No Desktop devices
 @mixin smq__not-desktop {
-    @media (max-width: #{$tablet-width}) {
+    @media (max-width: #{$desktop-width}) {
       @content;
     }
 }
