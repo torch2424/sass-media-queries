@@ -1,0 +1,129 @@
+//Inspired by: https://davidwalsh.name/write-media-queries-sass
+
+$mobile-width: 320px;
+$tablet-width: 768px;
+$desktop-width: 1024px;
+$large-desktop-width: 1440px;
+
+//Specific to mobile devices
+@mixin mobile {
+    @media (min-width: #{$mobile-width}) and (max-width: #{$tablet-width - 1px}) {
+      @content;
+    }
+}
+
+//Specific to tablet devices
+@mixin tablet {
+  @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
+    @content;
+  }
+}
+
+// Specific to desktop devices. Will include large desktop devices
+@mixin desktop {
+  @media (min-width: #{$desktop-width}) {
+    @content;
+  }
+}
+
+// Specific to large desktop devices. Will not include smaller desktop devices
+@mixin large-desktop {
+  @media (min-width: #{$large-desktop-width}) {
+    @content;
+  }
+}
+
+// All Mobile Devices including tablets
+@mixin all-mobile {
+    @media (max-width: #{$tablet-width}) {
+      @content;
+    }
+}
+
+// No Mobile devices
+@mixin not-mobile {
+    @media (min-width: #{$desktop-width}) {
+      @content;
+    }
+}
+
+// All Desktop Devices
+@mixin all-desktop {
+  @media (min-width: #{$desktop-width}) {
+    @content;
+  }
+}
+
+// No Desktop devices
+@mixin not-desktop {
+    @media (max-width: #{$tablet-width}) {
+      @content;
+    }
+}
+
+// Convinience Classes
+.smq__mobile {
+  display: none;
+
+  @include mobile {
+    display: block;
+  }
+}
+
+.smq__tablet {
+  display: none;
+
+  @include tablet {
+    display: block;
+  }
+}
+
+.smq__desktop {
+  display: none;
+
+  @include desktop {
+    display: block;
+  }
+}
+
+.smq__large-desktop {
+  display: none;
+
+  @include large-desktop {
+    display: block;
+  }
+}
+
+.smq__all-mobile {
+  display: none;
+
+  @include all-mobile {
+      display: block;
+  }
+}
+
+.smq__not-mobile {
+  display: none;
+
+  @include not-mobile {
+      display: block;
+  }
+}
+
+
+.smq__all-desktop {
+  display: none;
+
+  @include all-desktop {
+      display: block;
+  }
+}
+
+
+.smq__not-desktop {
+  display: none;
+
+  @include not-desktop {
+      display: block;
+  }
+}

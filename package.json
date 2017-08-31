@@ -1,0 +1,33 @@
+{
+  "name": "sass-media-queries",
+  "version": "1.0.0",
+  "description": "Sass Importable Media Queries",
+  "main": "index.scss",
+  "scripts": {
+    "test": "echo \"No test specified\" && exit 0",
+    "build": "npm run gh-pages",
+    "gh-pages": "cat docs/gh-pages.scss | ./node_modules/node-sass/bin/node-sass --output-style expanded > docs/gh-pages.css && node docs/gh-pages.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/torch2424/sass-media-queries.git"
+  },
+  "keywords": [
+    "sass",
+    "media",
+    "query",
+    "style"
+  ],
+  "author": "Aaron Turner",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/torch2424/sass-media-queries/issues"
+  },
+  "homepage": "https://github.com/torch2424/sass-media-queries#readme",
+  "devDependencies": {
+    "cheerio": "^1.0.0-rc.2",
+    "install": "^0.10.1",
+    "node-sass": "^4.5.3",
+    "npm": "^5.3.0"
+  }
+}
