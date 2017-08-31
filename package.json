@@ -1,6 +1,6 @@
 {
   "name": "sass-media-queries",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Sass Importable Media Queries",
   "main": "index.scss",
   "scripts": {
