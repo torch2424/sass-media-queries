@@ -34,28 +34,28 @@ $large-desktop-width: 1440px;
 
 With these in mind, here are the available classes and mixins:
 
-`@include smq__mobile / class="smq__mobile"` - Show only on mobile devices
+`@include smq__mobile or class="smq__mobile"` - Show only on mobile devices
 
 
-`@include smq__tablet / class="smq__tablet"` - Show only on tablet devices
+`@include smq__tablet or class="smq__tablet"` - Show only on tablet devices
 
 
-`@include smq__desktop / class="smq__desktop"` - Show only on desktop devices
+`@include smq__desktop or class="smq__desktop"` - Show only on desktop devices
 
 
-`@include smq__large-desktop / class="smq__large-desktop"` - Show only on large-desktop devices
+`@include smq__large-desktop or class="smq__large-desktop"` - Show only on large-desktop devices
 
 
-`@include smq__all-mobile / class="smq__all-mobile"` - Show only on mobile and tablet devices
+`@include smq__all-mobile or class="smq__all-mobile"` - Show only on mobile and tablet devices
 
 
-`@include smq__not-mobile / class="smq__not-mobile"` - Show only on desktop and large desktop devices
+`@include smq__not-mobile or class="smq__not-mobile"` - Show only on desktop and large desktop devices
 
 
-`@include smq__all-desktop / class="smq__all-desktop"` - Show only on desktop and large desktop devices
+`@include smq__all-desktop or class="smq__all-desktop"` - Show only on desktop and large desktop devices
 
 
-`@include smq__not-desktop / class="smq__not-desktop"` - Show only on mobile and tablet devices
+`@include smq__not-desktop or class="smq__not-desktop"` - Show only on mobile and tablet devices
 
 
 
