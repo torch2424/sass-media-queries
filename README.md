@@ -2,6 +2,8 @@
 
 [![npm version](https://badge.fury.io/js/sass-media-queries.svg)](https://badge.fury.io/js/sass-media-queries)
 
+![Example of Sass Media Queries](./docs/smqGithubPages.gif)
+
 Sass Importable Media Queries. Can be used as a class, or as a mixin. All mixins and classes are prepended with `smq__`. This follows BEM naming methodologies.
 
 [Github Pages Demo](https://torch2424.github.io/sass-media-queries/).
